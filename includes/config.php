@@ -7,7 +7,7 @@ date_default_timezone_set("America/Chicago");
 //Connecting to the database new PDO("mysql:dbname=videoSite;host=127.0.0.1", "root", ""); 
 
 try {
-		$con = new PDO("mysql:host=us-cdbr-iron-east-02.cleardb.net;dbname=videoSite", "b6e81a4aea5572", "");
+		$con = new PDO("mysql:host=us-cdbr-iron-east-02.cleardb.net;dbname=videoSite", "b6e81a4aea5572", "d5bef2d0");
 
 		$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 }
