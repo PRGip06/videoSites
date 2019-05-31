@@ -91,9 +91,9 @@ require_once("CommentControls.php");
 
 		// Timestamp
 
-		function time_elapsed_string($datetime, $full = false) {
+		function time_elapsed_string($timestamp, $full = false) {  //$datetime
     $now = new DateTime;
-    $ago = new DateTime($datetime);
+    $ago = new DateTime($timestamp); //$datetime
     $diff = $now->diff($ago);
 
     $diff->w = floor($diff->d / 7);
